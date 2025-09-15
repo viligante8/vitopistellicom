@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "vitopistellicom": {
+      "development": {
+        "fallback": "https://vitopistelli.com"
+      }
+    },
+    "connections": {
+      "routing": [
+        {
+          "group": "connections",
+          "paths": ["/connections", "/connections/:path*"]
+        }
+      ]
+    }
+  }
+}
