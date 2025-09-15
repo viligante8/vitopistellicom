@@ -4,18 +4,9 @@
     "vitopistellicom": {
       "development": {
         "fallback": "vito.codes"
-      },
-      "production": {
-        "fallback": "vito.codes"
       }
     },
     "connections": {
-      "development": {
-        "fallback": "connections.vito.codes"
-      },
-      "production": {
-        "fallback": "connections.vito.codes"
-      },
       "routing": [
         {
           "paths": ["/connections", "/connections/:path*"]
