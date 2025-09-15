@@ -3,10 +3,13 @@
   "applications": {
     "vitopistellicom": {
       "development": {
-        "fallback": "vitopistellicom.vercel.app"
+        "fallback": "vito.codes"
       }
     },
     "connections": {
+      "development": {
+        "fallback": "connections.vito.codes"
+      },
       "routing": [
         {
           "paths": ["/connections", "/connections/:path*"]
