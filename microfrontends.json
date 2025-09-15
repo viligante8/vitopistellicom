@@ -3,13 +3,12 @@
   "applications": {
     "vitopistellicom": {
       "development": {
-        "fallback": "https://vitopistelli.com"
+        "fallback": "vitopistellicom.vercel.app"
       }
     },
     "connections": {
       "routing": [
         {
-          "group": "connections",
           "paths": ["/connections", "/connections/:path*"]
         }
       ]
