@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import {
+  PrefetchCrossZoneLinks,
+  PrefetchCrossZoneLinksProvider,
+} from "@vercel/microfrontends/next/client";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,10 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <PrefetchCrossZoneLinksProvider>
+          {children}
+        </PrefetchCrossZoneLinksProvider>
+        <PrefetchCrossZoneLinks />
       </body>
     </html>
   );

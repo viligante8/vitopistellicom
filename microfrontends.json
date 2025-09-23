@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "vitopistellicom": {
+      "development": {
+        "fallback": "vitopistellicom.vercel.app"
+      }
+    },
+    "divine-market-index": {
+      "routing": [
+        {
+          "paths": ["/poe", "/poe/:path*"]
+        }
+      ]
+    }
+  }
+}
