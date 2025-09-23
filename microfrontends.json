@@ -3,13 +3,16 @@
   "applications": {
     "vitopistellicom": {
       "development": {
-        "fallback": "vitopistellicom.vercel.app"
+        "fallback": "www.vito.codes"
       }
     },
     "divine-market-index": {
       "routing": [
         {
-          "paths": ["/poe", "/poe/:path*"]
+          "paths": [
+            "/poe",
+            "/poe/:path*"
+          ]
         }
       ]
     }
