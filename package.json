@@ -6,7 +6,7 @@
     "dev": "next dev --port $(microfrontends port) --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "proxy": "microfrontends proxy microfrontends.json --local-apps vitopistellicom"
+    "proxy": "microfrontends proxy microfrontends.json --local-apps vitopistellicom divine-market-index"
   },
   "dependencies": {
     "@vercel/microfrontends": "latest",
